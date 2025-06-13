@@ -1,0 +1,10 @@
+event_class,param_name,param_type,range
+climate.drought,severity_index,float,0-1
+climate.drought,duration_d,int,1-3650
+bio.pandemic,r0,float,1.0-5.0
+bio.pandemic,ifr,float,0.001-0.05
+bio.pandemic,containment_score,float,0-1
+geo.volcanic_winter,vei,int,3-8
+geo.volcanic_winter,ash_optical_depth,float,0-1
+soc.conflict,combat_days,int,1-1000
+soc.conflict,intensity,int,1-10

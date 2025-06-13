@@ -1,0 +1,27 @@
+meta:
+  temporal_resolution: 1 day
+  spatial_grid: 0.25deg
+  version: 0.1.0
+
+dimensions:
+  - time
+  - tile_id
+
+channels:
+  population_total: int32
+  food_calorie_pc: float32
+  freshwater_l_pc: float32
+  energy_mj_pc: float32
+  food_supply_mt: float32
+  freshwater_supply_km3: float32
+  energy_supply_ej: float32
+
+event_taxonomy:
+  - class: "climate.drought"
+    params: {severity_index: 0-1, duration_d: int}
+  - class: "bio.pandemic"
+    params: {r0: float, ifr: float, containment_score: 0-1}
+  - class: "geo.volcanic_winter"
+    params: {vei: 3-8, ash_optical_depth: float}
+  - class: "soc.conflict"
+    params: {combat_days: int, intensity: 1-10}
